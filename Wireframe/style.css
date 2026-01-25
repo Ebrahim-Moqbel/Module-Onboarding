@@ -31,6 +31,9 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+header {
+  text-align: center;
+}
 a {
   padding: var(--space);
   border: var(--line);
@@ -62,6 +65,7 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 main {
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
