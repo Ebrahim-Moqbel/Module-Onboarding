@@ -49,6 +49,7 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
+  background-color: blanchedalmond;
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
@@ -56,6 +57,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  border-style: groove;
+  position-anchor: initial;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -87,7 +90,7 @@ article {
   > * {
     grid-column: 2/3;
   }
-  > img {
+   img {
     grid-column: span 3;
   }
 }
