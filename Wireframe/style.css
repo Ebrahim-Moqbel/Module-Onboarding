@@ -57,8 +57,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  border-style: groove;
-  position-anchor: initial;
+  border-style: top solid ;
+  position-anchor: center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
