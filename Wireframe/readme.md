@@ -1,0 +1,2 @@
+Why did I chose CYF along with my uni studies?
+code your future from my prespective is not just a tech school that you can potentially have your first tech job but it is a community that we can belong to and thrive in with all the support that we are getting.
