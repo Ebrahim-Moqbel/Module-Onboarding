@@ -28,18 +28,16 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background-color:rgba(159, 210, 58, 0.691);
+  background: var(--paper);
   color: var(--ink);
   font: var(--font);
-}
-.header {
-  text-align: center;
-  padding: 2px;
+  padding-bottom: 60px;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  border-style: none;
 }
 img,
 svg {
@@ -50,20 +48,18 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-
-
-.main {
-  background-color: blanchedalmond;
+main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  display: flex;
 }
-.footer {
+footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  border-top: 1px solid #000;
-  background-color: rgba(206, 245, 107, 0.663);
-  
+  height: 60px;
+  background-color:#f6f4f4;
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -73,7 +69,6 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 main {
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
@@ -95,7 +90,11 @@ article {
   > * {
     grid-column: 2/3;
   }
-   img {
+  > img {
     grid-column: span 3;
   }
+}
+
+header {
+  text-align: center;
 }
